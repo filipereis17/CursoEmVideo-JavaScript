@@ -22,19 +22,17 @@ function inLista(n, l) {
 function adicionar() {
     
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        alert('Tudo OK')
-        /*let n = Number(num.value)
-        let vet = []
-        vet.push(n)
+        let n = Number(num.value)
+        valores.push(n)
         let item = document.createElement('option')
         item.text = `Valor ${n} adicionado`
-        tab.appendChild(item)*/
+        tab.appendChild(item)
     } else {
         window.alert('Valor inválido ou já encontrado na lista')
     }
 }
 
-function finalizar(vet) {
-    vetAnalisador.push(vet)
+function finalizar() {
+    valores
 
 }
