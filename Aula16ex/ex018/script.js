@@ -50,3 +50,9 @@ function finalizar() {
         res.innerHTML += `A média dos valores digitados é  ${soma/tam}<br><br>`
     }
 }
+
+function limpar() {
+    tab.innerHTML = ''
+    res.innerHTML = ''
+    valores.length = 0
+}
