@@ -39,7 +39,9 @@ function finalizar() {
     } else {    
         tam = valores.length
         res.innerHTML = `Ao todo, temos ${tam} cadastrados<br><br>`
-        valores.sort()
+        valores.sort(function(a, b) {
+            return a - b;
+        })
         res.innerHTML += `O maior valor informado foi ${valores[tam - 1]}<br><br>`
         res.innerHTML += `O menor valor informado foi ${valores[0]}<br><br>`
         let soma = 0
